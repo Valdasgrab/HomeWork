@@ -29,5 +29,10 @@ class MainActivity : AppCompatActivity() {
         val suma = maxLong.plus(maxInt).plus(maxShort).plus(maxByte)
 
         Log.i(TAG, "The sum of the numbers: $suma")
+
+        val floatRef: Float
+        val doubleRef: Double
+
+
     }
 }
