@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
         val maxLong: Long = Long.MAX_VALUE
 
         Log.i(
-            TAG,
-            "Max Byte: $maxByte, Max Short: $maxShort, Max Int: $maxInt, Max Long $maxLong"
+            TAG, "Max Byte: $maxByte, Max Short: $maxShort, Max Int: $maxInt, Max Long $maxLong"
         )
 
         var suma = maxLong.plus(maxInt).plus(maxShort).plus(maxByte)
@@ -36,7 +35,11 @@ class MainActivity : AppCompatActivity() {
         val charTypeOne: Char = 88.toChar()
         val charTypeTwo: Char = '*'
 
-        Log.i(TAG, "typeMaxNumber: Char type: $charTypeOne, $charTypeTwo")
+        Log.i(
+            TAG,
+            "typeMaxNumber: Char type: $charTypeOne, $charTypeTwo " +
+                    "\nchar type for the Char type two: ${charTypeTwo.code} "
+        )
 
     }
 }
