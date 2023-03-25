@@ -37,9 +37,13 @@ class MainActivity : AppCompatActivity() {
 
         Log.i(
             TAG,
-            "typeMaxNumber: Char type: $charTypeOne, $charTypeTwo " +
+            " Char type: $charTypeOne, $charTypeTwo " +
                     "\nchar type for the Char type two: ${charTypeTwo.code} "
         )
+
+        val booleanValue = maxShort > maxInt
+
+        Log.i(TAG, "maxShort > maxInt: $booleanValue")
 
     }
 }
