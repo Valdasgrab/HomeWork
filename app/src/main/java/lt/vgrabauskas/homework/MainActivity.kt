@@ -22,10 +22,11 @@ class MainActivity : AppCompatActivity() {
         val maxLong: Long = Long.MAX_VALUE
 
         Log.i(
-            TAG, "Max Byte: $maxByte, Max Short: $maxShort, Max Int: $maxInt, Max Long $maxLong"
+            TAG, "Max Byte: $maxByte, Max Short: $maxShort, " +
+                    "Max Int: $maxInt, Max Long $maxLong"
         )
 
-        var suma = maxLong.plus(maxInt).plus(maxShort).plus(maxByte)
+        val suma = maxLong.plus(maxInt).plus(maxShort).plus(maxByte)
 
         Log.i(TAG, "The sum of the numbers: $suma")
 
@@ -33,8 +34,7 @@ class MainActivity : AppCompatActivity() {
         var doubleRef: Double
 
         val charTypeOne: Char = 88.toChar()
-        val charTypeTwo: Char = '*'
-
+        val charTypeTwo = '*'
         Log.i(
             TAG,
             " Char type: $charTypeOne, $charTypeTwo " +
@@ -42,8 +42,9 @@ class MainActivity : AppCompatActivity() {
         )
 
         val booleanValue = maxShort > maxInt
-
         Log.i(TAG, "maxShort > maxInt: $booleanValue")
 
+        val otherBoolValue = maxLong != (maxInt.toLong() + maxShort + maxByte)
+        Log.i(TAG, "Other Boolean value: $otherBoolValue")
     }
 }
