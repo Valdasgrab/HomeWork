@@ -26,13 +26,17 @@ class MainActivity : AppCompatActivity() {
             "Max Byte: $maxByte, Max Short: $maxShort, Max Int: $maxInt, Max Long $maxLong"
         )
 
-        val suma = maxLong.plus(maxInt).plus(maxShort).plus(maxByte)
+        var suma = maxLong.plus(maxInt).plus(maxShort).plus(maxByte)
 
         Log.i(TAG, "The sum of the numbers: $suma")
 
-        val floatRef: Float
-        val doubleRef: Double
+        var floatRef: Float
+        var doubleRef: Double
 
+        val charTypeOne: Char = 88.toChar()
+        val charTypeTwo: Char = '*'
+
+        Log.i(TAG, "typeMaxNumber: Char type: $charTypeOne, $charTypeTwo")
 
     }
 }
