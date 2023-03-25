@@ -25,5 +25,9 @@ class MainActivity : AppCompatActivity() {
             TAG,
             "Max Byte: $maxByte, Max Short: $maxShort, Max Int: $maxInt, Max Long $maxLong"
         )
+
+        val suma = maxLong.plus(maxInt).plus(maxShort).plus(maxByte)
+
+        Log.i(TAG, "The sum of the numbers: $suma")
     }
 }
